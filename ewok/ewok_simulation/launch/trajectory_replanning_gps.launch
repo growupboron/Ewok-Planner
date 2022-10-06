@@ -56,6 +56,7 @@
 <!--   <node pkg="ewok_simulation" type="pcNoise" name="pcNoise">
         <param name="noise" value="0.2"/>
     </node> -->
+  <node name="dummy_publisher" pkg="ewok_simulation" type="dummy_publisher" output="screen">
 
   <node name="bspline_controller_rishabh" pkg="ewok_simulation" type="bspline_controller_rishabh" output="screen">
       <param name="dt" value="$(arg dt)" />

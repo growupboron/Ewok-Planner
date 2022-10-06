@@ -299,7 +299,7 @@ int main(int argc, char** argv){
     message_filters::Subscriber<sensor_msgs::Image> depth_image_sub_ ;
     depth_image_sub_.subscribe(nh, "/camera/depth/image_raw", 5);
 
-    ros::Subscriber location = nh.subscribe<geometry_msgs::PoseStamped>("/mavros/local_position/pose",10,local_pose_cb);
+    ros::Subscriber location = nh.subscribe<geometry_msgs::PoseStamped>("/mavros/local_position/pose",10,local_pose_cb); // change_here
 
 
     // ##### RISHABH CHANGED THE FREQUENCY 
