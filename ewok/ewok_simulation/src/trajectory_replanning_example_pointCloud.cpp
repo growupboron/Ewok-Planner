@@ -259,7 +259,7 @@ int main(int argc, char** argv){
     tf::MessageFilter<sensor_msgs::PointCloud2> tf_filter_(depth_image_sub_, *listener, "map", 5);
     tf_filter_.registerCallback(pointCloudCallback);
 
-    ros::Subscriber location = nh.subscribe<geometry_msgs::PoseStamped>("/mavros/local_position/pose",10,local_pose_cb);
+    ros::Subscriber location = nh.subscribe<geometry_msgs::PoseStamped>("/mavros/local_position/pose",10,local_pose_cb); // change_here
 
 
     double max_velocity, max_acceleration;

@@ -23,7 +23,7 @@ int main(int argc, char** argv)
 {   
     ros::init(argc, argv, "drone_tf_publisher");
     ros::NodeHandle n;
-    ros::Subscriber tf_subscriber = n.subscribe<geometry_msgs::PoseStamped>("/mavros/local_position/pose", 10, getPose);
+    ros::Subscriber tf_subscriber = n.subscribe<geometry_msgs::PoseStamped>("/mavros/local_position/pose", 10, getPose); // change_here
     ros::spin();
 
     return 0;
